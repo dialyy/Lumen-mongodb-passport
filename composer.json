@@ -1,5 +1,5 @@
 {
-    "name": "moeen-basra/laravel-passport-mongodb",
+    "name": "luqta/laravel-passport-mongodb",
     "description": "Laravel Passport provides OAuth2 server support to Laravel.",
     "keywords": [
         "laravel",
@@ -9,8 +9,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Moeen Basra",
-            "email": "m.basra@live.com"
+            "name": "luqta",
+            "email": "dialyy@gmail.com"
         }
     ],
     "require": {
