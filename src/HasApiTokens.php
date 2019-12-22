@@ -1,6 +1,6 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB;
+namespace Luqta\LaravelPassportMongoDB;
 
 use Illuminate\Container\Container;
 
@@ -9,7 +9,7 @@ trait HasApiTokens
     /**
      * The current access token for the authentication user.
      *
-     * @var \MoeenBasra\LaravelPassportMongoDB\Token
+     * @var \Luqta\LaravelPassportMongoDB\Token
      */
     protected $accessToken;
 
@@ -36,7 +36,7 @@ trait HasApiTokens
     /**
      * Get the current access token being used by the user.
      *
-     * @return \MoeenBasra\LaravelPassportMongoDB\Token|null
+     * @return \Luqta\LaravelPassportMongoDB\Token|null
      */
     public function token()
     {
@@ -59,7 +59,7 @@ trait HasApiTokens
      *
      * @param  string  $name
      * @param  array  $scopes
-     * @return \MoeenBasra\LaravelPassportMongoDB\PersonalAccessTokenResult
+     * @return \Luqta\LaravelPassportMongoDB\PersonalAccessTokenResult
      */
     public function createToken($name, array $scopes = [])
     {
@@ -71,7 +71,7 @@ trait HasApiTokens
     /**
      * Set the current access token for the user.
      *
-     * @param  \MoeenBasra\LaravelPassportMongoDB\Token  $accessToken
+     * @param  \Luqta\LaravelPassportMongoDB\Token  $accessToken
      * @return $this
      */
     public function withAccessToken($accessToken)

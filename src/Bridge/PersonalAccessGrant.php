@@ -1,6 +1,6 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Bridge;
+namespace Luqta\LaravelPassportMongoDB\Bridge;
 
 use DateInterval;
 use Psr\Http\Message\ServerRequestInterface;

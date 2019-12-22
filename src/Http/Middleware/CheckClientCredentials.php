@@ -1,11 +1,11 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Http\Middleware;
+namespace Luqta\LaravelPassportMongoDB\Http\Middleware;
 
 use Closure;
 use League\OAuth2\Server\ResourceServer;
 use Illuminate\Auth\AuthenticationException;
-use MoeenBasra\LaravelPassportMongoDB\Exceptions\MissingScopeException;
+use Luqta\LaravelPassportMongoDB\Exceptions\MissingScopeException;
 use League\OAuth2\Server\Exception\OAuthServerException;
 use Symfony\Bridge\PsrHttpMessage\Factory\DiactorosFactory;
 
@@ -59,7 +59,7 @@ class CheckClientCredentials
      * @param  \Psr\Http\Message\ResponseInterface $psr
      * @param  array  $scopes
      * @return void
-     * @throws \MoeenBasra\LaravelPassportMongoDB\Exceptions\MissingScopeException
+     * @throws \Luqta\LaravelPassportMongoDB\Exceptions\MissingScopeException
      */
     protected function validateScopes($psr, $scopes)
     {

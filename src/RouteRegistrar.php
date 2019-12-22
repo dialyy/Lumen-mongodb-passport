@@ -1,6 +1,6 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB;
+namespace Luqta\LaravelPassportMongoDB;
 
 use Illuminate\Contracts\Routing\Registrar as Router;
 

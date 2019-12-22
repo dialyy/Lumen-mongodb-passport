@@ -1,6 +1,6 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB;
+namespace Luqta\LaravelPassportMongoDB;
 
 use Carbon\Carbon;
 use Jenssegers\Mongodb\Eloquent\Model;
@@ -11,7 +11,7 @@ class TokenRepository
      * Creates a new Access Token.
      *
      * @param  array  $attributes
-     * @return \MoeenBasra\LaravelPassportMongoDB\Token
+     * @return \Luqta\LaravelPassportMongoDB\Token
      */
     public function create($attributes)
     {
@@ -22,7 +22,7 @@ class TokenRepository
      * Get a token by the given ID.
      *
      * @param  string  $id
-     * @return \MoeenBasra\LaravelPassportMongoDB\Token
+     * @return \Luqta\LaravelPassportMongoDB\Token
      */
     public function find($id)
     {
@@ -34,7 +34,7 @@ class TokenRepository
      *
      * @param  string  $id
      * @param  int  $userId
-     * @return \MoeenBasra\LaravelPassportMongoDB\Token|null
+     * @return \Luqta\LaravelPassportMongoDB\Token|null
      */
     public function findForUser($id, $userId)
     {
@@ -56,8 +56,8 @@ class TokenRepository
      * Get a valid token instance for the given user and client.
      *
      * @param  \Jenssegers\Mongodb\Eloquent\Model  $user
-     * @param  \MoeenBasra\LaravelPassportMongoDB\Client  $client
-     * @return \MoeenBasra\LaravelPassportMongoDB\Token|null
+     * @param  \Luqta\LaravelPassportMongoDB\Client  $client
+     * @return \Luqta\LaravelPassportMongoDB\Token|null
      */
     public function getValidToken($user, $client)
     {
@@ -71,7 +71,7 @@ class TokenRepository
     /**
      * Store the given token instance.
      *
-     * @param  \MoeenBasra\LaravelPassportMongoDB\Token  $token
+     * @param  \Luqta\LaravelPassportMongoDB\Token  $token
      * @return void
      */
     public function save(Token $token)
@@ -110,8 +110,8 @@ class TokenRepository
      * Find a valid token for the given user and client.
      *
      * @param  \Jenssegers\Mongodb\Eloquent\Model  $user
-     * @param  \MoeenBasra\LaravelPassportMongoDB\Client  $client
-     * @return \MoeenBasra\LaravelPassportMongoDB\Token|null
+     * @param  \Luqta\LaravelPassportMongoDB\Client  $client
+     * @return \Luqta\LaravelPassportMongoDB\Token|null
      */
     public function findValidToken($user, $client)
     {

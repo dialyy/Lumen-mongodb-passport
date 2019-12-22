@@ -1,6 +1,6 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Bridge;
+namespace Luqta\LaravelPassportMongoDB\Bridge;
 
 use RuntimeException;
 use Illuminate\Contracts\Hashing\Hasher;

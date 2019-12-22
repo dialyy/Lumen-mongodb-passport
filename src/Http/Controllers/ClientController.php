@@ -1,10 +1,10 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Http\Controllers;
+namespace Luqta\LaravelPassportMongoDB\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use MoeenBasra\LaravelPassportMongoDB\ClientRepository;
+use Luqta\LaravelPassportMongoDB\ClientRepository;
 use Illuminate\Contracts\Validation\Factory as ValidationFactory;
 
 class ClientController
@@ -12,7 +12,7 @@ class ClientController
     /**
      * The client repository instance.
      *
-     * @var \MoeenBasra\LaravelPassportMongoDB\ClientRepository
+     * @var \Luqta\LaravelPassportMongoDB\ClientRepository
      */
     protected $clients;
 
@@ -26,7 +26,7 @@ class ClientController
     /**
      * Create a client controller instance.
      *
-     * @param  \MoeenBasra\LaravelPassportMongoDB\ClientRepository  $clients
+     * @param  \Luqta\LaravelPassportMongoDB\ClientRepository  $clients
      * @param  \Illuminate\Contracts\Validation\Factory  $validation
      * @return void
      */
@@ -73,7 +73,7 @@ class ClientController
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  string  $clientId
-     * @return \Illuminate\Http\Response|\MoeenBasra\LaravelPassportMongoDB\Client
+     * @return \Illuminate\Http\Response|\Luqta\LaravelPassportMongoDB\Client
      */
     public function update(Request $request, $clientId)
     {

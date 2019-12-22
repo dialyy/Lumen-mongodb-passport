@@ -1,6 +1,6 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Http\Controllers;
+namespace Luqta\LaravelPassportMongoDB\Http\Controllers;
 
 use Exception;
 use Throwable;

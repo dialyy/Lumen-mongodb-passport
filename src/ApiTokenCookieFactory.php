@@ -1,6 +1,6 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB;
+namespace Luqta\LaravelPassportMongoDB;
 
 use Carbon\Carbon;
 use Firebase\JWT\JWT;

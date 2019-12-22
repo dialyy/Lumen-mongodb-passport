@@ -1,6 +1,6 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Console;
+namespace Luqta\LaravelPassportMongoDB\Console;
 
 use Illuminate\Console\Command;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Console;
+namespace Luqta\LaravelPassportMongoDB\Console;
 
 use Illuminate\Console\Command;
-use MoeenBasra\LaravelPassportMongoDB\ClientRepository;
-use MoeenBasra\LaravelPassportMongoDB\PersonalAccessClient;
+use Luqta\LaravelPassportMongoDB\ClientRepository;
+use Luqta\LaravelPassportMongoDB\PersonalAccessClient;
 
 class ClientCommand extends Command
 {
@@ -28,7 +28,7 @@ class ClientCommand extends Command
     /**
      * Execute the console command.
      *
-     * @param  \MoeenBasra\LaravelPassportMongoDB\ClientRepository  $clients
+     * @param  \Luqta\LaravelPassportMongoDB\ClientRepository  $clients
      * @return void
      */
     public function handle(ClientRepository $clients)
@@ -47,7 +47,7 @@ class ClientCommand extends Command
     /**
      * Create a new personal access client.
      *
-     * @param  \MoeenBasra\LaravelPassportMongoDB\ClientRepository  $clients
+     * @param  \Luqta\LaravelPassportMongoDB\ClientRepository  $clients
      * @return void
      */
     protected function createPersonalClient(ClientRepository $clients)
@@ -73,7 +73,7 @@ class ClientCommand extends Command
     /**
      * Create a new password grant client.
      *
-     * @param  \MoeenBasra\LaravelPassportMongoDB\ClientRepository  $clients
+     * @param  \Luqta\LaravelPassportMongoDB\ClientRepository  $clients
      * @return void
      */
     protected function createPasswordClient(ClientRepository $clients)
@@ -95,7 +95,7 @@ class ClientCommand extends Command
     /**
      * Create a authorization code client.
      *
-     * @param  \MoeenBasra\LaravelPassportMongoDB\ClientRepository  $clients
+     * @param  \Luqta\LaravelPassportMongoDB\ClientRepository  $clients
      * @return void
      */
     protected function createAuthCodeClient(ClientRepository $clients)

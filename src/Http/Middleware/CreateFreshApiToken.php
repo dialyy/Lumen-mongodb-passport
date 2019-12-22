@@ -1,18 +1,18 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Http\Middleware;
+namespace Luqta\LaravelPassportMongoDB\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Response;
-use MoeenBasra\LaravelPassportMongoDB\Passport;
-use MoeenBasra\LaravelPassportMongoDB\ApiTokenCookieFactory;
+use Luqta\LaravelPassportMongoDB\Passport;
+use Luqta\LaravelPassportMongoDB\ApiTokenCookieFactory;
 
 class CreateFreshApiToken
 {
     /**
      * The API token cookie factory instance.
      *
-     * @var \MoeenBasra\LaravelPassportMongoDB\ApiTokenCookieFactory
+     * @var \Luqta\LaravelPassportMongoDB\ApiTokenCookieFactory
      */
     protected $cookieFactory;
 
@@ -26,7 +26,7 @@ class CreateFreshApiToken
     /**
      * Create a new middleware instance.
      *
-     * @param  \MoeenBasra\LaravelPassportMongoDB\ApiTokenCookieFactory  $cookieFactory
+     * @param  \Luqta\LaravelPassportMongoDB\ApiTokenCookieFactory  $cookieFactory
      * @return void
      */
     public function __construct(ApiTokenCookieFactory $cookieFactory)

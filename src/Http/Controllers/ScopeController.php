@@ -1,8 +1,8 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Http\Controllers;
+namespace Luqta\LaravelPassportMongoDB\Http\Controllers;
 
-use MoeenBasra\LaravelPassportMongoDB\Passport;
+use Luqta\LaravelPassportMongoDB\Passport;
 
 class ScopeController
 {

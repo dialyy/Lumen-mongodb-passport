@@ -1,24 +1,24 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Http\Controllers;
+namespace Luqta\LaravelPassportMongoDB\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use MoeenBasra\LaravelPassportMongoDB\TokenRepository;
+use Luqta\LaravelPassportMongoDB\TokenRepository;
 
 class AuthorizedAccessTokenController
 {
     /**
      * The token repository implementation.
      *
-     * @var \MoeenBasra\LaravelPassportMongoDB\TokenRepository
+     * @var \Luqta\LaravelPassportMongoDB\TokenRepository
      */
     protected $tokenRepository;
 
     /**
      * Create a new controller instance.
      *
-     * @param  \MoeenBasra\LaravelPassportMongoDB\TokenRepository  $tokenRepository
+     * @param  \Luqta\LaravelPassportMongoDB\TokenRepository  $tokenRepository
      * @return void
      */
     public function __construct(TokenRepository $tokenRepository)

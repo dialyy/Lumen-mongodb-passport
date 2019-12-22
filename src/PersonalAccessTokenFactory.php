@@ -1,6 +1,6 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB;
+namespace Luqta\LaravelPassportMongoDB;
 
 use Zend\Diactoros\Response;
 use Zend\Diactoros\ServerRequest;
@@ -63,7 +63,7 @@ class PersonalAccessTokenFactory
      * @param  mixed  $userId
      * @param  string  $name
      * @param  array  $scopes
-     * @return \MoeenBasra\LaravelPassportMongoDB\PersonalAccessTokenResult
+     * @return \Luqta\LaravelPassportMongoDB\PersonalAccessTokenResult
      */
     public function make($userId, $name, array $scopes = [])
     {
@@ -86,7 +86,7 @@ class PersonalAccessTokenFactory
     /**
      * Create a request instance for the given client.
      *
-     * @param  \MoeenBasra\LaravelPassportMongoDB\Client  $client
+     * @param  \Luqta\LaravelPassportMongoDB\Client  $client
      * @param  mixed  $userId
      * @param  array  $scopes
      * @return \Zend\Diactoros\ServerRequest

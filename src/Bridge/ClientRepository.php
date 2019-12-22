@@ -1,8 +1,8 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Bridge;
+namespace Luqta\LaravelPassportMongoDB\Bridge;
 
-use MoeenBasra\LaravelPassportMongoDB\ClientRepository as ClientModelRepository;
+use Luqta\LaravelPassportMongoDB\ClientRepository as ClientModelRepository;
 use League\OAuth2\Server\Repositories\ClientRepositoryInterface;
 
 class ClientRepository implements ClientRepositoryInterface
@@ -10,14 +10,14 @@ class ClientRepository implements ClientRepositoryInterface
     /**
      * The client model repository.
      *
-     * @var \MoeenBasra\LaravelPassportMongoDB\ClientRepository
+     * @var \Luqta\LaravelPassportMongoDB\ClientRepository
      */
     protected $clients;
 
     /**
      * Create a new repository instance.
      *
-     * @param  \MoeenBasra\LaravelPassportMongoDB\ClientRepository  $clients
+     * @param  \Luqta\LaravelPassportMongoDB\ClientRepository  $clients
      * @return void
      */
     public function __construct(ClientModelRepository $clients)
@@ -58,7 +58,7 @@ class ClientRepository implements ClientRepositoryInterface
     /**
      * Determine if the given client can handle the given grant type.
      *
-     * @param  \MoeenBasra\LaravelPassportMongoDB\Client  $record
+     * @param  \Luqta\LaravelPassportMongoDB\Client  $record
      * @param  string  $grantType
      * @return bool
      */

@@ -1,12 +1,12 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Http\Controllers;
+namespace Luqta\LaravelPassportMongoDB\Http\Controllers;
 
 use Illuminate\Http\Request;
-use MoeenBasra\LaravelPassportMongoDB\Passport;
-use MoeenBasra\LaravelPassportMongoDB\Bridge\User;
-use MoeenBasra\LaravelPassportMongoDB\TokenRepository;
-use MoeenBasra\LaravelPassportMongoDB\ClientRepository;
+use Luqta\LaravelPassportMongoDB\Passport;
+use Luqta\LaravelPassportMongoDB\Bridge\User;
+use Luqta\LaravelPassportMongoDB\TokenRepository;
+use Luqta\LaravelPassportMongoDB\ClientRepository;
 use Jenssegers\Mongodb\Eloquent\Model;
 use Psr\Http\Message\ServerRequestInterface;
 use Zend\Diactoros\Response as Psr7Response;
@@ -50,8 +50,8 @@ class AuthorizationController
      *
      * @param  \Psr\Http\Message\ServerRequestInterface  $psrRequest
      * @param  \Illuminate\Http\Request  $request
-     * @param  \MoeenBasra\LaravelPassportMongoDB\ClientRepository  $clients
-     * @param  \MoeenBasra\LaravelPassportMongoDB\TokenRepository  $tokens
+     * @param  \Luqta\LaravelPassportMongoDB\ClientRepository  $clients
+     * @param  \Luqta\LaravelPassportMongoDB\TokenRepository  $tokens
      * @return \Illuminate\Http\Response
      */
     public function authorize(ServerRequestInterface $psrRequest,

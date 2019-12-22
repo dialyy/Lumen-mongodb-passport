@@ -1,8 +1,8 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Http\Controllers;
+namespace Luqta\LaravelPassportMongoDB\Http\Controllers;
 
-use MoeenBasra\LaravelPassportMongoDB\TokenRepository;
+use Luqta\LaravelPassportMongoDB\TokenRepository;
 use Lcobucci\JWT\Parser as JwtParser;
 use Psr\Http\Message\ServerRequestInterface;
 use Zend\Diactoros\Response as Psr7Response;
@@ -22,7 +22,7 @@ class AccessTokenController
     /**
      * The token repository instance.
      *
-     * @var \MoeenBasra\LaravelPassportMongoDB\TokenRepository
+     * @var \Luqta\LaravelPassportMongoDB\TokenRepository
      */
     protected $tokens;
 
@@ -37,7 +37,7 @@ class AccessTokenController
      * Create a new controller instance.
      *
      * @param  \League\OAuth2\Server\AuthorizationServer  $server
-     * @param  \MoeenBasra\LaravelPassportMongoDB\TokenRepository  $tokens
+     * @param  \Luqta\LaravelPassportMongoDB\TokenRepository  $tokens
      * @param  \Lcobucci\JWT\Parser  $jwt
      * @return void
      */

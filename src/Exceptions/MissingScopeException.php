@@ -1,6 +1,6 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Exceptions;
+namespace Luqta\LaravelPassportMongoDB\Exceptions;
 
 use Illuminate\Auth\Access\AuthorizationException;
 

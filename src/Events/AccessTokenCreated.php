@@ -1,6 +1,6 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Events;
+namespace Luqta\LaravelPassportMongoDB\Events;
 
 class AccessTokenCreated
 {

@@ -1,15 +1,15 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Guards;
+namespace Luqta\LaravelPassportMongoDB\Guards;
 
 use Exception;
 use Firebase\JWT\JWT;
 use Illuminate\Http\Request;
-use MoeenBasra\LaravelPassportMongoDB\Passport;
+use Luqta\LaravelPassportMongoDB\Passport;
 use Illuminate\Container\Container;
-use MoeenBasra\LaravelPassportMongoDB\TransientToken;
-use MoeenBasra\LaravelPassportMongoDB\TokenRepository;
-use MoeenBasra\LaravelPassportMongoDB\ClientRepository;
+use Luqta\LaravelPassportMongoDB\TransientToken;
+use Luqta\LaravelPassportMongoDB\TokenRepository;
+use Luqta\LaravelPassportMongoDB\ClientRepository;
 use League\OAuth2\Server\ResourceServer;
 use Illuminate\Contracts\Auth\UserProvider;
 use Illuminate\Contracts\Encryption\Encrypter;
@@ -36,14 +36,14 @@ class TokenGuard
     /**
      * The token repository instance.
      *
-     * @var \MoeenBasra\LaravelPassportMongoDB\TokenRepository
+     * @var \Luqta\LaravelPassportMongoDB\TokenRepository
      */
     protected $tokens;
 
     /**
      * The client repository instance.
      *
-     * @var \MoeenBasra\LaravelPassportMongoDB\ClientRepository
+     * @var \Luqta\LaravelPassportMongoDB\ClientRepository
      */
     protected $clients;
 
@@ -59,8 +59,8 @@ class TokenGuard
      *
      * @param  \League\OAuth2\Server\ResourceServer  $server
      * @param  \Illuminate\Contracts\Auth\UserProvider  $provider
-     * @param  \MoeenBasra\LaravelPassportMongoDB\TokenRepository  $tokens
-     * @param  \MoeenBasra\LaravelPassportMongoDB\ClientRepository  $clients
+     * @param  \Luqta\LaravelPassportMongoDB\TokenRepository  $tokens
+     * @param  \Luqta\LaravelPassportMongoDB\ClientRepository  $clients
      * @param  \Illuminate\Contracts\Encryption\Encrypter  $encrypter
      * @return void
      */

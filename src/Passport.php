@@ -1,6 +1,6 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB;
+namespace Luqta\LaravelPassportMongoDB;
 
 use Mockery;
 use DateInterval;
@@ -109,7 +109,7 @@ class Passport
 
         $defaultOptions = [
             'prefix' => 'oauth',
-            'namespace' => '\MoeenBasra\LaravelPassportMongoDB\Http\Controllers',
+            'namespace' => '\Luqta\LaravelPassportMongoDB\Http\Controllers',
         ];
 
         $options = array_merge($defaultOptions, $options);

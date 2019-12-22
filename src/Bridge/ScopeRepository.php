@@ -1,8 +1,8 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Bridge;
+namespace Luqta\LaravelPassportMongoDB\Bridge;
 
-use MoeenBasra\LaravelPassportMongoDB\Passport;
+use Luqta\LaravelPassportMongoDB\Passport;
 use League\OAuth2\Server\Entities\ClientEntityInterface;
 use League\OAuth2\Server\Repositories\ScopeRepositoryInterface;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Bridge;
+namespace Luqta\LaravelPassportMongoDB\Bridge;
 
 use DateTime;
-use MoeenBasra\LaravelPassportMongoDB\TokenRepository;
+use Luqta\LaravelPassportMongoDB\TokenRepository;
 use Illuminate\Contracts\Events\Dispatcher;
-use MoeenBasra\LaravelPassportMongoDB\Events\AccessTokenCreated;
+use Luqta\LaravelPassportMongoDB\Events\AccessTokenCreated;
 use League\OAuth2\Server\Entities\ClientEntityInterface;
 use League\OAuth2\Server\Entities\AccessTokenEntityInterface;
 use League\OAuth2\Server\Repositories\AccessTokenRepositoryInterface;
@@ -17,7 +17,7 @@ class AccessTokenRepository implements AccessTokenRepositoryInterface
     /**
      * The token repository instance.
      *
-     * @var \MoeenBasra\LaravelPassportMongoDB\TokenRepository
+     * @var \Luqta\LaravelPassportMongoDB\TokenRepository
      */
     protected $tokenRepository;
 
@@ -31,7 +31,7 @@ class AccessTokenRepository implements AccessTokenRepositoryInterface
     /**
      * Create a new repository instance.
      *
-     * @param  \MoeenBasra\LaravelPassportMongoDB\TokenRepository  $tokenRepository
+     * @param  \Luqta\LaravelPassportMongoDB\TokenRepository  $tokenRepository
      * @param  \Illuminate\Contracts\Events\Dispatcher  $events
      */
     public function __construct(TokenRepository $tokenRepository, Dispatcher $events)

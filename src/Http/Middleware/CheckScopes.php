@@ -1,9 +1,9 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB\Http\Middleware;
+namespace Luqta\LaravelPassportMongoDB\Http\Middleware;
 
 use Illuminate\Auth\AuthenticationException;
-use MoeenBasra\LaravelPassportMongoDB\Exceptions\MissingScopeException;
+use Luqta\LaravelPassportMongoDB\Exceptions\MissingScopeException;
 
 class CheckScopes
 {
@@ -15,7 +15,7 @@ class CheckScopes
      * @param  mixed  ...$scopes
      * @return \Illuminate\Http\Response
      * @throws \Illuminate\Auth\AuthenticationException
-     * @throws \MoeenBasra\LaravelPassportMongoDB\Exceptions\MissingScopeException
+     * @throws \Luqta\LaravelPassportMongoDB\Exceptions\MissingScopeException
      */
     public function handle($request, $next, ...$scopes)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace MoeenBasra\LaravelPassportMongoDB;
+namespace Luqta\LaravelPassportMongoDB;
 
 use DateInterval;
 use Illuminate\Auth\RequestGuard;
@@ -10,16 +10,16 @@ use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\ServiceProvider;
-use MoeenBasra\LaravelPassportMongoDB\Guards\TokenGuard;
+use Luqta\LaravelPassportMongoDB\Guards\TokenGuard;
 use League\OAuth2\Server\CryptKey;
 use League\OAuth2\Server\ResourceServer;
 use League\OAuth2\Server\AuthorizationServer;
 use League\OAuth2\Server\Grant\AuthCodeGrant;
 use League\OAuth2\Server\Grant\ImplicitGrant;
 use League\OAuth2\Server\Grant\PasswordGrant;
-use MoeenBasra\LaravelPassportMongoDB\Bridge\PersonalAccessGrant;
+use Luqta\LaravelPassportMongoDB\Bridge\PersonalAccessGrant;
 use League\OAuth2\Server\Grant\RefreshTokenGrant;
-use MoeenBasra\LaravelPassportMongoDB\Bridge\RefreshTokenRepository;
+use Luqta\LaravelPassportMongoDB\Bridge\RefreshTokenRepository;
 use League\OAuth2\Server\Grant\ClientCredentialsGrant;
 
 class PassportServiceProvider extends ServiceProvider
